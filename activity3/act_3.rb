@@ -13,15 +13,18 @@ class Enroll
     def enroll_units
         @is_enrolled = true
         @is_paid = "pending..."
+        puts "\nID Number: #{idnum}"
+        puts "Degree Program: #{@degree}"
         puts "Total Tuition Fee: PHP #{@units * 2000}"
-        puts "Proceed to tuition payment..."
+        puts "\nProceed to tuition payment..."
     end
 
     def pay_tuition
         if @is_enrolled == true
             @is_paid = true
-            puts "Fully Paid!"
-            puts "You are already enrolled for this semester"
+            puts "\nFully Paid!"
+            puts "ID #{@idnum}, #{@degree}, you are already enrolled and paid"
+            puts "Goodluck this coming semester!"
         else
             puts "Enroll units first"
         end
