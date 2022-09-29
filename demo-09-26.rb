@@ -1,6 +1,6 @@
 class Employee #parent class/ superclass
     @@employees = []
-    #attr_accessor :sex, :age, :rating
+    attr_accessor :active
 
     def initialize(age,sex)
         @sex = sex
@@ -11,14 +11,16 @@ class Employee #parent class/ superclass
     end
 
     def resign
-        @active = false #resigned
+       #@active = false #resigned
+       puts "#{active}"
     end
 
     def self.all
-        @@employees
+        #"#{@@employees}"
     end
 
     def self.size
+        @@employees.size
     end
     
 end
@@ -36,13 +38,16 @@ end
    # end
 #end
 
-puts Employee.all
+
 #puts SoftwareEngineer.total
 tammy = Employee.new(23,"F")
+puts tammy.active
 #abdul = SoftwareEngineer.new(31,"M")
-germee = Employee.new(25,"F")
-puts Employee.all
+#germee = Employee.new(25,"F")
+#puts Employee.size
 #puts SoftwareEngineer.total
+tammy.resign
+puts tammy.active
 
 
 
