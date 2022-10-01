@@ -1,13 +1,16 @@
 1
 def is_isogram(input)
+    
 string_arr = []
 input.downcase.chars.each do |letter|
-    if string_arr.include?(letter)
-        return false
+    unless string_arr.include?(letter)
+        string_arr.append(letter)
     end
-string_arr.append(letter)
 end
-return true
+
+return true if string_arr.length == input.downcase.chars.length
+return false
+
 end
 
 puts is_isogram("Dermatoglyphics") # true
