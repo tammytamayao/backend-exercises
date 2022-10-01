@@ -1,6 +1,6 @@
 1
 def is_isogram(input)
-    
+
 string_arr = []
 input.downcase.chars.each do |letter|
     unless string_arr.include?(letter)
@@ -13,6 +13,6 @@ return false
 
 end
 
-puts is_isogram("Dermatoglyphics") # true
-puts is_isogram("aba") # false
-puts is_isogram("moOse") # false
+puts is_isogram("Dermatoglyphics") # Output: true
+puts is_isogram("aba") # Output: false
+puts is_isogram("moOse") # Output: false
