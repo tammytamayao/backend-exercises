@@ -1,4 +1,3 @@
-1
 def is_isogram(input)
 
 string_arr = []
