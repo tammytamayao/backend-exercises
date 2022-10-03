@@ -7,16 +7,6 @@ end
 return arr
 end
 
-puts "#{unique_in_order('AAAABBBCCDAABBB')}"
-puts "#{unique_in_order('ABBCcAD')}"
-puts "#{unique_in_order([1,2,2,3,3])}"
-
-
-
-#i=0
- #   while i < input_to_arr.length do
-    #arr.append(input_to_arr[i]) if input_to_arr[i] != input_to_arr[i+1]
-    #i+=1
-#end
-    #i+=1
-#end
+puts "#{unique_in_order('AAAABBBCCDAABBB')}" # [A,B,C,D,A,B]
+puts "#{unique_in_order('ABBCcAD')}" # [A,B,C,c,A,D]
+puts "#{unique_in_order([1,2,2,3,3])}" # [1,2,3]
